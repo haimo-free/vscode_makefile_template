@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnPaste": false,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"C_Cpp.loggingLevel": "Warning",
+		"C_Cpp.autoAddFileAssociations": false,
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.default.cppStandard": "c++11",
+		"C_Cpp.default.intelliSenseMode": "clang-x64",
+		"clang.cflags": [
+			"-g -Wall -std=c++11"
+		],
+		"workbench.tree.indent": 16,
+		"workbench.tree.renderIndentGuides": "always",
+		"files.exclude": {
+			"**/*.o": true
+		},
+		"shellformat.path": "/usr/local/bin/shfmt",
+		"shellformat.flag": "-i 4 -ci"
+	}
+}
