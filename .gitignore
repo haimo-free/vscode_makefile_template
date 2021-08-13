@@ -36,3 +36,6 @@
 
 # Project
 build
+src/static_lib/*.a
+src/shared_lib/*.so
+src/app/app

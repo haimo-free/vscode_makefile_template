@@ -19,7 +19,10 @@
 		"workbench.tree.indent": 16,
 		"workbench.tree.renderIndentGuides": "always",
 		"files.exclude": {
-			"**/*.o": true
+			"**/*.o": true,
+			"src/static_lib/*.a": true,
+			"src/shared_lib/*.so": true,
+			"src/app/app": true
 		},
 		"shellformat.path": "/usr/local/bin/shfmt",
 		"shellformat.flag": "-i 4 -ci"

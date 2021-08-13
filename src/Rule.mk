@@ -25,6 +25,8 @@ INSTALL_DIR ?= $(ROOT_PATH)/../build
 CFLAGS   := -fPIC -g -Wall -Wextra -fno-strict-aliasing -fvisibility=hidden
 CXXFLAGS := -fPIC -g -Wall -Wextra -fno-strict-aliasing -fvisibility=hidden -std=c++11
 
+LDFLAGS :=
+
 INCLUDES :=
 
 LIBS := -pthread

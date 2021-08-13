@@ -1,6 +1,6 @@
 include ../Rule.mk
 
-TARGET := libmy_math.a
+TARGET := libslib.a
 
 all: $(TARGET)
 

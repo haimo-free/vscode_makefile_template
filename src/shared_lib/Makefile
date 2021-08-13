@@ -1,18 +1,10 @@
 include ../Rule.mk
 
-SLIB_PATH = ../static_lib
-DLIB_PATH = ../shared_lib
+INCLUDES += -I.
 
-INCLUDES += -I. \
-			-I$(SLIB_PATH) \
-			-I$(DLIB_PATH)
+LIBS += 
 
-LIBS += -L$(SLIB_PATH) -lslib \
-		-L$(DLIB_PATH) -ldlib
-
-LDFLAGS += -Wl,-rpath,./
-
-TARGET := app
+TARGET := libdlib.so
 
 all: $(TARGET)
 
@@ -22,7 +14,7 @@ all: $(TARGET)
 	$(GCC) -o $@ $(CFLAGS) $(INCLUDES) $< -c
 
 $(TARGET): $(OBJS)
-	$(CXX) $^ $(LIBS) $(LDFLAGS) -o $@
+	$(CXX) -shared $^ $(LIBS) $(LDFLAGS) -o $@
 
 .PHONY: clean
 clean:
